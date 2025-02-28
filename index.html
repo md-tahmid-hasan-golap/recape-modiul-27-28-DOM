@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>recape dom and make projecr</title>
+
+    <!-- tailwind & daiy ui set up  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body  class="bg-slate-800">
+
+    <h1 class="text-3xl font-bold">My Project start now</h1>
+
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+
+       <header>
+        <nav class="flex justify-center items-center">
+            <div class="relative flex justify-center items-center w-9/12 mb-12 mt-12">
+                <img class="w-48 absolute" src="./images/Rectangle 1.png" alt="">
+                <img class="w-16" src="./images/Group.png" alt="">
+            </div>
+        </nav>
+       </header>
+
+         <!-- login form daisy ul -->
+         <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Mobile Number</span>
+                    </label>
+                    <input id="number_input" value="01707115247" type="number" placeholder="Enter your number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">4 Digit Pin</span>
+                    </label>
+                    <input id="password_input" value="1234" type="text" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+                    <label class="label">
+                      
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn_login" class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+    </section>
+    
+      <script type="module" src="./js/index.js"></script>
     
 </body>
 </html>
